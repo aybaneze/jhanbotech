@@ -1,0 +1,85 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 252, 237);
+}
+
+header{
+    background: yellow;
+    color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    width: 100%;
+  
+}
+ul{
+    margin-right: 0;
+}
+
+ul li{
+   list-style: none;   
+   display: inline-block;
+   padding: 25px;
+   font-size: 20px; 
+}
+
+ul li:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-bottom: 4px solid rgb(214, 184, 11);
+    transition: all 0.9s;
+}
+
+.sect1{
+    background-image: url(https://www.zurweb.com/wp-content/uploads/2017/12/Dise%C3%B1o-web-2018.jpg);
+    background-size: cover;
+    height: 90vh;
+    padding-top: 100px;
+}
+
+.logo{
+    
+    justify-content: left;
+    font-size: 46px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 20px;
+}
+
+.logo span{
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top: 42px;
+}
+
+.sect1 .welcome-init{
+    width: 50%;
+    height: 50%;
+    background: rgba(58, 55, 55, 0.726); 
+    display: flex;
+    align-items: center;
+    border-radius:0px 20px 20px 0px;
+    animation: aparece-izquierda ease 1s backwards; 
+}
+
+.sect1 .welcome-init p{
+    font-size: 56px;
+    color: white;
+}
+
+@keyframes aparece-izquierda
+{
+    from { 
+         transform: translateX(-100%); 
+         opacity: 0;
+            }
+    to { 
+         transform: translateX(0%); 
+         opacity: 1;
+            }
+}
+ 
