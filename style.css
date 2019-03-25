@@ -1,36 +1,179 @@
-.img-carrousel img{
-    max-height: 100%;
-    display: inline;
+body,html{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 252, 237);
 }
 
-.sect1{
-    background-color: #F3E5F5;
-    padding: 42px;
-
-}
-
-.slick-dots{
+header{
+    background: rgb(255, 224, 46);
+    color: black;
+    height: 80px;
     display: flex;
-    justify-content: space-around;
-}
-
-.slick-dots li.slick-active button:before{
-    color: #999;
-}
-
-.slick-dots li button:before{
-    font-size: 1.5rem;
-    color: white;
-    opacity: 1;
-}
-
-/* .slick-track {
-    display: flex;
-}
-.slick-track .slick-slide {
-    flex-direction: column;
-    display: flex;
-    height: auto;
     align-items: center;
-    justify-content: center;
-  } */
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+section{
+    width: 100%;
+}
+ul{
+    margin-right: 0;
+}
+
+ul li{
+   list-style: none;   
+   display: inline-block;
+   padding: 25px;
+   font-size: 10px; 
+ 
+   letter-spacing: 4px;
+   transition: all 0.9s;
+}
+
+ul li:hover{
+    background: rgba(44, 44, 44, 0.404);
+    color: white;
+    cursor: pointer;
+    border-bottom: 4px solid rgb(214, 184, 11);
+    
+}
+
+
+.wraper {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: rgb(37, 37, 37);
+  }
+
+.logo{
+    
+    justify-content: left;
+    font-size: 46px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 20px;
+}
+
+.logo span{
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top: 42px;
+}
+
+/* .sect1{
+    height: 100vh;
+} */
+
+
+
+.welcome-init{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Fredericka the Great', cursive;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    left: 400px;
+}
+
+header .h3{
+    background: rgb(255, 224, 46);
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    font-size: 26px;
+    width: 9%;
+    height: 50%;
+    font-family: 'Fredericka the Great', cursive; 
+    position: relative;
+}
+
+header .h3 p{
+    transform: rotate(-35deg);
+    margin: 0;
+    text-align: center;
+
+}
+header .h4 p{
+    transform: rotate(20deg);
+    margin: 0;
+    text-align: center;
+}
+  
+
+  header .h4{
+    position:relative;
+    background: #000000;
+    color: rgb(255, 224, 46);
+    border-radius: 100%;
+    font-size: 26px;
+    width: 9%;
+    height:50%;
+    font-family: 'Fredericka the Great', cursive;
+  }
+
+  .sect1-a, .sect1-b{
+      height: 100vh; 
+  }
+  section .sect1-a{
+      background: rgb(37, 37, 37);
+      position: relative;
+ 
+
+  }
+  section .sect1-b{
+    background: rgb(255, 224, 46);
+}
+
+.drop-mobile p{
+    display: none;
+}
+/* @keyframes aparece-izquierda
+{
+    from { 
+         transform: translateX(-100%); 
+         opacity: 0;
+            }
+    to { 
+         transform: translateX(0%); 
+         opacity: 1;
+            }
+} */
+.sect1-b{
+    padding: 50px 120px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+@media screen and (max-width: 600px)  {
+    .welcome-init h1{
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        font-family: 'Fredericka the Great', cursive;
+        position: absolute;
+        width: 100%;
+        /* top: 200px; */
+        left: 100px;
+    }
+    .sect1-b{
+        padding: 50px 120px;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Fredericka the Great', cursive;
+    }
+    .parrafo{
+        font-size: 42px;
+    }
+    .drop{
+        display:none;
+    }
+    .drop-mobile p{
+        display: block;
+    }
+  }
