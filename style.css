@@ -4,176 +4,72 @@ body,html{
     background: rgb(255, 252, 237);
 }
 
-header{
-    background: rgb(255, 224, 46);
-    color: black;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    position: fixed;
-    z-index: 999;
-    font-family: 'lato', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-}
-section{
-    width: 100%;
-}
-ul{
-    margin-right: 0;
-}
-
-ul li{
-   list-style: none;   
-   display: inline-block;
-   padding: 25px;
-   font-size: 10px; 
- 
-   letter-spacing: 4px;
-   transition: all 0.9s;
-}
-
-ul li:hover{
-    background: rgba(44, 44, 44, 0.404);
-    color: white;
-    cursor: pointer;
-    border-bottom: 4px solid rgb(214, 184, 11);
-    
-}
-
-
-.wraper {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    background: rgb(37, 37, 37);
-  }
-
-.logo{
-    
-    justify-content: left;
-    font-size: 46px;
-    font-weight: 500;
-    position: relative;
-    padding-left: 20px;
-}
-
-.logo span{
-    font-size: 16px;
-    position: absolute;
-    right: 15px;
-    top: 42px;
-}
-
-/* .sect1{
-    height: 100vh;
-} */
-
-
-
-.welcome-init{
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    font-family: 'Fredericka the Great', cursive;
-    position: absolute;
-    width: 100%;
-    top: 200px;
-    left: 400px;
-}
-
-header .h3{
-    background: rgb(255, 224, 46);
-    color: rgb(0, 0, 0);
-    border-radius: 100%;
-    font-size: 26px;
-    width: 9%;
-    height: 50%;
-    font-family: 'Fredericka the Great', cursive; 
-    position: relative;
-}
-
-header .h3 p{
-    transform: rotate(-35deg);
-    margin: 0;
-    text-align: center;
-
-}
-header .h4 p{
-    transform: rotate(20deg);
-    margin: 0;
-    text-align: center;
-}
-  
-
-  header .h4{
-    position:relative;
-    background: #000000;
-    color: rgb(255, 224, 46);
-    border-radius: 100%;
-    font-size: 26px;
-    width: 9%;
-    height:50%;
-    font-family: 'Fredericka the Great', cursive;
-  }
-
-  .sect1-a, .sect1-b{
-      height: 100vh; 
-  }
-  section .sect1-a{
-      background: rgb(37, 37, 37);
-      position: relative;
- 
-
-  }
-  section .sect1-b{
-    background: rgb(255, 224, 46);
-}
-
-.drop-mobile p{
-    display: none;
-}
-/* @keyframes aparece-izquierda
-{
-    from { 
-         transform: translateX(-100%); 
-         opacity: 0;
-            }
-    to { 
-         transform: translateX(0%); 
-         opacity: 1;
-            }
-} */
-.sect1-b{
+.carrusel-section .item-carrusel p{
     padding: 50px 120px;
     text-align: center;
     font-size: 80px;
     font-family: 'Fredericka the Great', cursive;
 }
 
-@media screen and (max-width: 600px)  {
-    .welcome-init h1{
-        font-size: 26px;
-        color: rgb(255, 255, 255);
-        font-family: 'Fredericka the Great', cursive;
-        position: absolute;
-        width: 100%;
-        /* top: 200px; */
-        left: 100px;
-    }
-    .sect1-b{
-        padding: 50px 120px;
-        text-align: center;
-        font-size: 30px;
-        font-family: 'Fredericka the Great', cursive;
-    }
-    .parrafo{
-        font-size: 42px;
-    }
-    .drop{
-        display:none;
-    }
-    .drop-mobile p{
-        display: block;
-    }
-  }
+section{
+    height: 100vh;
+}
+
+body.jhanbo .carrusel-section,body.jhanbo .slick-list,body.jhanbo .slick-track {
+    height: 100%;
+    width: 100%;
+}
+body.jhanbo .carrusel-section{
+    margin: 0;
+}
+.trans-dig{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.carrusel-section .c1{
+    background: gold;  
+}
+.carrusel-section .c2{
+    background-image: url(https://vilmanunez.com/wp-content/uploads/2018/12/transformacion-digital.png);
+    background-size: cover;
+}
+.carrusel-section .c3{
+    background: rgb(0, 190, 127); 
+}
+.carrusel-section .c4{
+    background: rgb(190, 108, 0); 
+}
+.carrusel-section .c5{
+    background: rgb(190, 0, 127); 
+}
+ul.slick-dots {
+   top: 50px;
+   z-index: 1;
+}
+.slick-dots li{
+margin: 0 15px;
+}
+.slick-dots li button {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 3px solid #000;
+ 
+}
+.slick-dots li button:before {
+    background: #000;
+    opacity: 1;
+    border-radius: 100%;
+    font-size: 8px;
+    top: 5px;
+    left: 6px;
+}
+
+.slick-dots li.slick-active button:before{
+    background: #fff;
+    opacity: 1;
+    color: #fff;
+}
